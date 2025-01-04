@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسکای پیکسل</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b99cff;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: rgb(176, 210, 255);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .rank-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .rank-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+
+        .rank-item h3 {
+            color: #555;
+        }
+
+        .rank-item p {
+            color: #777;
+        }
+
+        .rank-item button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .rank-item button:hover {
+            background-color: #0056b3;
+        }
+
+        .ip-box {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+
+        .ip-box p {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: #555;
+        }
+
+        .ip-box button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .ip-box button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function copyIP() {
+            const ip = "play.soon.com";
+            navigator.clipboard.writeText(ip).then(() => {
+                alert("آی‌پی کپی شد: " + ip);
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">صفحه اصلی</a></li>
+                <li><a href="#chanel">چنل های ما</a></li>
+                <li><a href="#about"></a></li>
+                <li><a href="#contact"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>به اسکای پیکسل خوش آمدید</h1>
+        <p>سرور جدید سروایول</p>
+        <div class="ip-box">
+            <p>آی‌پی سرور: play.skypixel.com</p>
+            <button onclick="copyIP()">کپی آی‌پی</button>
+        </div>
+    </section>
+
+    <section id="ranks">
+        <h2>فروشگاه</h2>
+        <div class="rank-list">
+            <div class="rank-item">
+                <h3>برای خرید به روبیکا ما بیایید</h3>
+                <p></p>
+                <button>به اینجا کلیک کنید</button>
+            </div>
+        </div>
+
+    <section id="chanel">
+        <h2>تمامی کانال های اسکای پیکسل</h2>
+        <p></p>
+        <div class="rank-item">
+            <h3>روبیکا</h3>
+            <p></p>
+            <button><a href="https://rubika.ir/Arch_Green_gamer" target="_blank" class="button">کلیک کنید</a>
+            </button>
+
+        </div>
+        <div class="rank-item">
+            <h3>دیسکورد</h3>
+            <p></p>
+            <button><a href="https://rubika.ir/Arch_Green_gamer" target="_blank" class="button">کلیک کنید</a></button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>روبیکا</h2>
+        <p>ما در اسکای پیکسل متعهد به ارائه بهترین تجربه بازی هستیم.</p>
+    </section>
+
+    <section id="contact">
+        <h2>تماس با ما</h2>
+        <p>برای هرگونه سوال یا پیشنهاد، با ما تماس بگیرید.</p>
+    </section>
+
+    <footer>
+        <p>تمامی حقوق محفوظ است. اسکای پیکسل &copy; 2024</p>
+    </footer>
+</body>
+</html>
